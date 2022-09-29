@@ -55,6 +55,7 @@ brew install --cask slack
 brew install --cask clickup
 brew install --cask discord
 brew install --cask visual-studio-code
+brew install --cask docker
 
 
 

@@ -6,11 +6,22 @@ This repository is most likely useless to anyone except me, I just made it publi
 Some things can be automatically setup through a [script](/setup) and some need to be manually set in the operating system.
 
 ## Automatic
-Any parts that can be setup automatically are taken care of by this [script](/setup) (note that the variable BREW_PATH needs to be set to the directory containing `brew` if the Mac is not using apple silicon).
-`/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/adriansahlman/setup_mac/main/setup)"`
+Any parts that can be setup automatically are taken care of by this [script](/setup). Make sure that the manual step for [Sleep](#Sleep) has been made first.
+
+Note that env var `BREW_PATH` must be set for intel-based macs (the default value `/opt/homebrew/bin/brew` only works for apple silicone).
+
+Run the automatic script with:
+`/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/adriansahlman/setup_mac/main/setup.sh)"`
 
 ## Manual
 Manual steps that need to be taken are documented below.
+
+### Sleep
+`System Preferences` -> `Battery` -> `Power Adapter`
+
+Enable:
+* `Prevent your Mac from automatically sleeping when the display is off`
+
 
 ### Finder
 `View` -> `As List`
@@ -72,6 +83,28 @@ Disable:
 * `Launchpad`
 
 
+### Bluetooth
+`System Preferences` -> `Bluetooth`
+
+Enable:
+* `Show Bluetooth in menu bar`
+
+
+### Dock
+`System Preferences` -> `Dock & Menu Bar`
+
+Disable:
+* `Show recent applications in Dock`
+
+
+### Mission Control
+`System Preferences` -> `Mission Control`
+
+Disable:
+* `Automatically rearrange Spaces based on most recent use`
+* `When switching to an application, switch to a Space with open windows for the application`
+
+
 ### Terminal
 `Terminal` -> `Preferences` -> `Profiles` -> `Shell`
 Set
@@ -80,3 +113,7 @@ Set
 
 ### SSH
 Need to set up SSH keys and config
+
+
+### Python
+Install python 3.8
