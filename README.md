@@ -113,9 +113,3 @@ Set
 
 ### SSH
 Need to set up SSH keys and config
-
-
-### Python
-Install python 3.8
-
-run `conda config --set auto_activate_base false`
