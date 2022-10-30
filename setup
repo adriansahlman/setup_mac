@@ -2,9 +2,6 @@
 set -eux
 
 
-ARCH='arm64'
-
-
 
 # CUSTOMIZE TERMINAL
 
@@ -19,17 +16,22 @@ defaults write com.apple.Finder AppleShowAllFiles true
 
 
 
-# INSTALL HOMEBREW
+# ADD COMMAND-LINE TOOLS
+
+xcode-select --install || :
+
+
+
+# ADD HOMEBREW
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew update
-
 # these lines are dependent on where homebrew is located, location changes depending on arch (intel vs arm)
 : "${BREW_PATH:=/opt/homebrew/bin/brew}"
 brew_activate=$(printf 'eval $(%s shellenv)' ${BREW_PATH})
 echo '# activate brew' >> ~/.zshrc
 echo "${brew_activate}\n" >> ~/.zshrc
-source ~/.zshrc
+eval $(${BREW_PATH} shellenv)
+brew update
 
 
 
@@ -83,19 +85,6 @@ sudo chmod +x /usr/local/bin/protoc
 # disable key hold functionality
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-# install neovim
-brew install neovim
-
-# add neovim conifg
-mkdir -p ~/.config/nvim
-cd ~/.config/nvim && wget https://gist.githubusercontent.com/adriansahlman/8982f99b770d5972bf470f5ba2a4ed06/raw/07c776587c5932ab87b1c154788e6a25e960739c/init.vim
-
-# install neovim plugin manager
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-# install neovim plugins
-nvim -c ':PlugInstall' -c ':q' -c ':q'
-
 
 
 # CONFIGURE GIT
@@ -105,17 +94,3 @@ git config --global init.defaultBranch main
 git config --global user.name "Adrian Sahlman"
 git config --global user.email "adrian.sahlman@gmail.com"
 git config --global core.editor vim
-
-
-
-# ADD PYTHON
-
-PYTHON_VERSION=3.8
-curl -fsSL -v -o ~/miniconda.sh -O  "https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-${ARCH}.sh"
-chmod +x ~/miniconda.sh
-~/miniconda.sh -b -p ~/anaconda3
-rm ~/miniconda.sh
-~/anaconda3/bin/conda install -y python=${PYTHON_VERSION} cmake conda-build pyyaml numpy ipython
-echo "export PATH=${HOME}/anaconda3/bin:\${PATH}" >> ~/.zshrc
-export PATH="${HOME}/anaconda3/bin:${PATH}"
-conda install pytorch torchvision torchaudio -c pytorch
