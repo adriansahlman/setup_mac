@@ -2,9 +2,6 @@
 set -eux
 
 
-ARCH='arm64'
-
-
 
 # CUSTOMIZE TERMINAL
 
@@ -97,17 +94,3 @@ git config --global init.defaultBranch main
 git config --global user.name "Adrian Sahlman"
 git config --global user.email "adrian.sahlman@gmail.com"
 git config --global core.editor vim
-
-
-
-# ADD PYTHON
-
-PYTHON_VERSION=3.8
-curl -fsSL -v -o ~/miniconda.sh -O  "https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-${ARCH}.sh"
-chmod +x ~/miniconda.sh
-~/miniconda.sh -b -p ~/anaconda3
-rm ~/miniconda.sh
-~/anaconda3/bin/conda install -y python=${PYTHON_VERSION} cmake conda-build pyyaml numpy ipython
-echo 'export PATH="~/anaconda3/bin:${PATH}"' >> ~/.zshrc
-export PATH="~/anaconda3/bin:${PATH}"
-conda install pytorch torchvision torchaudio -c pytorch
