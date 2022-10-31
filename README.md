@@ -96,6 +96,8 @@ Enable:
 Disable:
 * `Show recent applications in Dock`
 
+Enable:
+* `Automatically hide and show the Dock`
 
 ### Mission Control
 `System Preferences` -> `Mission Control`
