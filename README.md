@@ -109,6 +109,7 @@ Disable:
 
 ### Terminal
 `Terminal` -> `Preferences` -> `Profiles` -> `Shell`
+
 Set
 * `When the shell exits`: `Close the window`
 
