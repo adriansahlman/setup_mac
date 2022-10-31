@@ -111,5 +111,12 @@ Set
 * `When the shell exits`: `Close the window`
 
 
+### Turn off tips
+`System Preferences` -> `Notifications & Focus` -> `Tips`
+
+Disable:
+* `Allow Notifications`
+
+
 ### SSH
 Need to set up SSH keys and config
