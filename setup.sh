@@ -95,3 +95,10 @@ git config --global init.defaultBranch main
 git config --global user.name "Adrian Sahlman"
 git config --global user.email "adrian.sahlman@gmail.com"
 git config --global core.editor vim
+
+
+
+# FIX FOR PYTHON GRPC
+
+echo 'export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1' >> ~/.zshrc
+echo 'export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1' >> ~/.zshrc
