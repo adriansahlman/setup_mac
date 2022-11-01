@@ -59,6 +59,11 @@ go install github.com/segmentio/golines@latest
 
 
 
+# ADD BUF
+brew install bufbuild/buf/buf
+
+
+
 # ADD COMMON APPS
 
 brew install --cask firefox
