@@ -69,6 +69,7 @@ brew install --cask clickup
 brew install --cask discord
 brew install --cask visual-studio-code
 brew install --cask docker
+brew install --cask steam
 
 # Install protoc
 PROTOC_ZIP=protoc-3.14.0-osx-x86_64.zip
