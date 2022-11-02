@@ -57,6 +57,11 @@ cd ~ && wget https://gist.githubusercontent.com/adriansahlman/1068fbc6b5b7fd80ea
 brew install go
 go install github.com/segmentio/golines@latest
 
+echo 'export GOPATH="${HOME}/go"' >> ~/.zshrc
+echo 'export GOROOT="$(brew --prefix golang)/libexec"' >> ~/.zshrc
+echo 'export PATH="${PATH}:${GOPATH}/bin:${GOROOT}/bin"' >> ~/.zshrc
+echo 'export GOBIN="${GOPATH}/bin"' >> ~/.zshrc
+
 
 
 # ADD BUF
