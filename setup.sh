@@ -7,6 +7,7 @@ set -eux
 
 echo '# custom prompt' > ~/.zshrc
 echo 'PS1="%3~ $ "\n' >> ~/.zshrc
+echo "alias cls=\"clear 77 printf '\\\e[3J'\"" >> ~/.zshrc
 
 
 
