@@ -49,7 +49,7 @@ source ~/.linuxify
 
 # CONFIGURE VIM
 
-cd ~ && wget https://gist.githubusercontent.com/adriansahlman/1068fbc6b5b7fd80ea62bcc1b3de0275/raw/1a5e5a3cacbf95edcae89146db0e65a2a0b2f3af/.vimrc
+wget -o ~/.vimrc https://gist.githubusercontent.com/adriansahlman/1068fbc6b5b7fd80ea62bcc1b3de0275/raw/1a5e5a3cacbf95edcae89146db0e65a2a0b2f3af/.vimrc
 
 
 
@@ -90,6 +90,24 @@ sudo unzip -o $PROTOC_ZIP -d /usr/local 'include/*'
 rm -f $PROTOC_ZIP
 sudo chmod +x /usr/local/bin/protoc
 
+
+# K8s
+
+# kubectl and prompt showing namespace etc
+brew install kubectl
+mkdir -p ~/.config
+wget -O ~/.config/kubectl.zsh https://raw.githubusercontent.com/superbrothers/zsh-kubectl-prompt/master/kubectl.zsh
+echo 'autoload -U colors; colors' >> ~/.zshrc
+echo 'source ~/.config/kubectl.zsh' >> ~/.zshrc
+echo $(printf RPROMPT=\'%s\' '%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}') >> ~/.zshrc
+
+# autocompletion for kubectl
+echo 'autoload -Uz compinit' >> ~/.zshrc
+echo 'compinit -u' >> ~/.zshrc
+echo 'source <(kubectl completion zsh)' >> ~/.zshrc
+
+# minikube
+brew install minikube
 
 
 # VSCODE SETUP
