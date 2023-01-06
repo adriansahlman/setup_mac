@@ -106,6 +106,9 @@ echo 'autoload -Uz compinit' >> ~/.zshrc
 echo 'compinit -u' >> ~/.zshrc
 echo 'source <(kubectl completion zsh)' >> ~/.zshrc
 
+# k9s
+brew install derailed/k9s/k9s
+
 # minikube
 brew install minikube
 
