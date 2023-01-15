@@ -106,8 +106,17 @@ echo 'autoload -Uz compinit' >> ~/.zshrc
 echo 'compinit -u' >> ~/.zshrc
 echo 'source <(kubectl completion zsh)' >> ~/.zshrc
 
+# kubectl aliases
+echo "alias k='kubectl '" >> ~/.zshrc
+echo "alias kns='kubectl config set-context --current --namespace '" >> ~/.zshrc
+
 # k9s
 brew install derailed/k9s/k9s
+
+# flux
+brew install fluxcd/tap/flux
+echo "alias fgk='flux get kustomizations'" >> ~/.zshrc
+echo "alias frk='flux reconcile kustomization --with-source '" >> ~/.zshrc
 
 # minikube
 brew install minikube
