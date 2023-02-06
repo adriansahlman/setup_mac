@@ -63,6 +63,11 @@ echo 'export GOROOT="$(brew --prefix golang)/libexec"' >> ~/.zshrc
 echo 'export PATH="${PATH}:${GOPATH}/bin:${GOROOT}/bin"' >> ~/.zshrc
 echo 'export GOBIN="${GOPATH}/bin"' >> ~/.zshrc
 
+# go interpreter
+go install github.com/traefik/yaegi/cmd/yaegi@latest
+brew install rlwrap
+echo "alias yaegi='rlwrap yaegi'" >> ~/.zshrc
+
 
 
 # ADD BUF
