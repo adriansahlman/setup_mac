@@ -137,7 +137,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # azure cli
 brew install azure-cli
-az aks install-cli
+sudo az aks install-cli
 
 
 # CONFIGURE GIT
