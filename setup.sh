@@ -133,6 +133,12 @@ echo 'alias tf=terraform' >> ~/.zshrc
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 
+# CLOUD
+
+# azure cli
+brew install azure-cli
+az aks install-cli
+
 
 # CONFIGURE GIT
 
