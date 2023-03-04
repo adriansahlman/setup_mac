@@ -98,6 +98,7 @@ brew install --cask discord
 brew install --cask visual-studio-code
 brew install --cask docker
 brew install --cask steam
+brew install --cask deluge
 
 # Install protoc
 brew install protobuf
