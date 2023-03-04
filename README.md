@@ -8,8 +8,6 @@ Some things can be automatically setup through a [script](/setup) and some need 
 ## Automatic
 Any parts that can be setup automatically are taken care of by this [script](/setup). Make sure that the manual step for [Sleep](#Sleep) has been made first.
 
-Note that env var `BREW_PATH` must be set for intel-based macs (the default value `/opt/homebrew/bin/brew` only works for apple silicone).
-
 Run the automatic script with:
 `/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/adriansahlman/setup_mac/main/setup.sh)"`
 
