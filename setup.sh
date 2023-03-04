@@ -13,6 +13,10 @@ echo 'PS1="%3~ $ "\n' >> ~/.zshrc
 echo "alias cls=\"clear 77 printf '\\\e[3J'\"" >> ~/.zshrc
 
 
+# Remove press and hold keyboard functionality
+
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 
 # FINDER SETTINGS
 
@@ -82,33 +86,17 @@ echo "alias yaegi='rlwrap yaegi'" >> ~/.zshrc
 
 
 
-# ADD BUF
-brew install bufbuild/buf/buf
+# ADD COMON TOOLS
 
-
-
-# ADD COMMON APPS
-
-brew install --cask firefox
-brew install --cask spotify
-brew install --cask vlc
-brew install --cask slack
-brew install --cask clickup
-brew install --cask discord
-brew install --cask visual-studio-code
-brew install --cask docker
-brew install --cask steam
-brew install --cask deluge
-brew install graphviz
-
-# Install protoc
 brew install protobuf
+brew install bufbuild/buf/buf
+brew install graphviz
+brew install flamegraph
 
-
-# K8s
-
-# kubectl and prompt showing namespace etc
+# K8 stuff
 brew install kubectl
+
+# kubectl prompt showing namespace etc
 mkdir -p ~/.config
 wget -O ~/.config/kubectl.zsh https://raw.githubusercontent.com/superbrothers/zsh-kubectl-prompt/master/kubectl.zsh
 echo 'autoload -U colors; colors' >> ~/.zshrc
@@ -141,10 +129,19 @@ brew install hashicorp/tap/terraform
 echo 'alias tf=terraform' >> ~/.zshrc
 
 
-# VSCODE SETUP
 
-# disable key hold functionality
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+# ADD COMMON APPS
+
+brew install --cask firefox
+brew install --cask spotify
+brew install --cask vlc
+brew install --cask slack
+brew install --cask clickup
+brew install --cask discord
+brew install --cask visual-studio-code
+brew install --cask docker
+brew install --cask steam
+brew install --cask deluge
 
 
 # CLOUD
