@@ -121,3 +121,11 @@ Disable:
 
 ### SSH
 Need to set up SSH keys and config
+
+## Firefox Extensions
+https://addons.mozilla.org/en-US/firefox/addon/darkreader/
+https://addons.mozilla.org/en-US/firefox/addon/delugeaddtorrent/
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+https://addons.mozilla.org/en-US/firefox/addon/betterttv/
+https://www.frankerfacez.com/
+https://addons.mozilla.org/en-US/firefox/addon/7tv/
