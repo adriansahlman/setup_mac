@@ -3,10 +3,10 @@ This repository contains instructions and a script for setting up a new macbook.
 
 This repository is most likely useless to anyone except me, I just made it public so that I can more easily access its contents on a new computer.
 
-Some things can be automatically setup through a [script](/setup) and some need to be manually set in the operating system.
+Some things can be automatically setup through a [script](/setup.sh) and some need to be manually set in the operating system.
 
 ## Automatic
-Any parts that can be setup automatically are taken care of by this [script](/setup). Make sure that the manual step for [Sleep](#Sleep) has been made first.
+Any parts that can be setup automatically are taken care of by this [script](/setup.sh). IMPORTANT! Make sure that the manual step for disabling computer sleeping when display is off first.
 
 Run the automatic script with:
 `/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/adriansahlman/setup_mac/main/setup.sh)"`
