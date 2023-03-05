@@ -109,3 +109,4 @@ https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 https://addons.mozilla.org/en-US/firefox/addon/betterttv/
 https://www.frankerfacez.com/
 https://addons.mozilla.org/en-US/firefox/addon/7tv/
+https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/
