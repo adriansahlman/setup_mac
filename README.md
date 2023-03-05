@@ -14,109 +14,85 @@ Run the automatic script with:
 ## Manual
 Manual steps that need to be taken are documented below.
 
-### Sleep
-`System Preferences` -> `Battery` -> `Power Adapter`
+### System Preferences
 
-Enable:
-* `Prevent your Mac from automatically sleeping when the display is off`
+#### Trackpad
+##### Point & Click
+* *Force Click and haptic feedback* - Disable <br>
+* *Look up & data detectors* - Disable <br>
+* *Tap to click* - Disable <br>
+##### Scroll & Zoom
+* *Natural scrolling* - Disable <br>
+##### More Gestures
+* *Swipe between pages* - Off <br>
+* *Launchpad* - Disable <br>
+
+#### Keyboard
+* *Key repeat rate* - Fastest <br>
+* *Delay until repeat* - Shortest <br>
+* *Turn keyboard backlight off after inactivity* - After 5 Seconds <br>
+* *Press fn key to* - Do Nothing <br>
+##### Keyboard Shortcuts...
+Modifier Keys
+* *Caps Lock* - Escape <br>
+* *Function* - Control <br>
+##### Text Input -> Input Sources -> Edit...
+All Input Sources
+* *Correct spelling automatically* - Disable <br>
+* *Capitalise words automatically* - Disable <br>
+* *Add full stop with double-space* - Disable <br>
+* *Use smart quotes and dashes* - Disable <br>
+##### Text Input -> Text Replacements...
+* *omw* - Remove replacement <br>
+
+#### Control Centre
+##### Control Center Modules
+* *Bluetooth* - Show in Menu Bar <br>
+* *Sound* - Always Show in Menu Bar <br>
+##### Other Modules
+Battery
+* *Show Percentage* - Enable <br>
+
+#### Desktop & Dock
+* *Automatically hide and show the Dock* - Enable <br>
+* *Show recent applications in Dock* - Disable <br>
+* *Automatically rearrange Spaces based on most recent use* - Disable <br>
+* *When switching to an application, switch to a Space with open windows for the application* - Disable <br>
+
+#### Lock Screen
+* *Require password after screen saver begins or display is turned off* - After 15 minutes <br>
+
+#### Displays
+Night Shift...
+* *Schedule* - Sunset to Sunrise <br>
+
+Advanced...
+* *Prevent automatic sleeping on power adapter when the display is off* - Enable <br>
+
+#### Notifications
+-> Tips <br>
+* *Allow notifications* - Disable <br>
 
 
 ### Finder
-`View` -> `As List`
+Open a Window <br> <br>
+`View` -> `as List` <br> <br>
+`Finder` -> `Settings...` <br>
+Sidebar <br>
+* *Favorites - $USER* - Enable <br>
 
+General <br>
+* *New Finder windows show:* - $USER <br>
 
-`Finder` -> `Preferences` -> `General`
-
-
-Set:
-* `New Finder windows show`: `adriansahlman`
-
-
-`Finder` -> `Preferences` -> `Sidebar`
-
-Enable:
-* `Favorites`-> `adriansahlman`
-
-
-`Finder` -> `Preferences` -> `Advanced`
-
-Enable:
-* `Show all filename extensions`
-
-### keyboard
-`System Preferences` -> `Keyboard`
-
-Set:
-* `Key Repeat` to fastest
-* `Delay Until Repeat` to shortest
-
-Change `Modifier Keys...`:
-* `Caps Lock`: `Escape`
-* `Globe`/`Fn`: `Control`
-
-Enable:
-* `Turn keyboard backlight off after 5 secs of inactivity`
-
-`System Preferences` -> `Keyboard` -> `Text`
-
-Remove `omw` shortcut
-
-Disable:
-* `Correct spelling automatically`
-* `Capitalise words automatically`
-* `Add full stop with double-space`
-* `Use smart quotes and dashes`
-
-
-### Mouse/Trackpad
-`System Preferences` -> `Trackpad` -> `Scroll & Zoom`
-
-Disable:
-* `Scroll direction: Natural`
-
-`System Preferences` -> `Trackpad` -> `More Gestures`
-
-Disable:
-* `Swipe between pages`
-* `Launchpad`
-
-
-### Bluetooth
-`System Preferences` -> `Bluetooth`
-
-Enable:
-* `Show Bluetooth in menu bar`
-
-
-### Dock
-`System Preferences` -> `Dock & Menu Bar`
-
-Disable:
-* `Show recent applications in Dock`
-
-Enable:
-* `Automatically hide and show the Dock`
-
-### Mission Control
-`System Preferences` -> `Mission Control`
-
-Disable:
-* `Automatically rearrange Spaces based on most recent use`
-* `When switching to an application, switch to a Space with open windows for the application`
+Advanced <br>
+* *Show all filename extensions* - Enable <br>
 
 
 ### Terminal
-`Terminal` -> `Preferences` -> `Profiles` -> `Shell`
-
-Set
-* `When the shell exits`: `Close the window`
-
-
-### Turn off tips
-`System Preferences` -> `Notifications & Focus` -> `Tips`
-
-Disable:
-* `Allow Notifications`
+Open a Window <br> <br>
+`Terminal` -> `Settings...` <br>
+Profiles -> Shell <br>
+* *When the shell exits* - Close the window <br>
 
 
 ### SSH

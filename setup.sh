@@ -18,6 +18,11 @@ echo "alias cls=\"clear 77 printf '\\\e[3J'\"" >> ~/.zshrc
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 
+# Show hidden files in finder
+
+defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder;
+
+
 # FINDER SETTINGS
 
 defaults write com.apple.Finder AppleShowAllFiles true
@@ -41,7 +46,7 @@ elif [[ "$ARCH" == "X86" ]]
 then
 	: "${BREW_PATH:=/usr/local/bin/brew}"
 else
-	echo "Unknown arch returned: '$ARCH'" >>/dev/stderr 
+	echo "Unknown arch returned: '$ARCH'" >>/dev/stderr
 	exit 2
 fi
 brew_activate=$(printf 'eval $(%s shellenv)' ${BREW_PATH})
