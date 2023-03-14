@@ -21,6 +21,7 @@ wget -o ~/.vimrc https://gist.githubusercontent.com/adriansahlman/1068fbc6b5b7fd
 
 brew install go
 go install github.com/segmentio/golines@latest
+brew install golangci-lint
 
 echo 'export GOPATH="${HOME}/go"' >> ~/.zshrc
 echo 'export GOROOT="$(brew --prefix golang)/libexec"' >> ~/.zshrc
