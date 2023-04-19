@@ -92,6 +92,7 @@ brew install --cask docker
 brew install --cask steam
 brew install --cask deluge
 brew install --cask microsoft-teams
+brew install --cask whatsapp
 
 
 # CLOUD
