@@ -37,6 +37,7 @@ echo "alias yaegi='rlwrap yaegi'" >> ~/.zshrc
 
 # ADD COMON TOOLS
 
+brew install jq
 brew install protobuf
 brew install bufbuild/buf/buf
 brew install graphviz
