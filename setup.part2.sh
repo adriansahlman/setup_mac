@@ -42,6 +42,7 @@ brew install protobuf
 brew install bufbuild/buf/buf
 brew install graphviz
 brew install flamegraph
+brew install tree
 
 # K8 stuff
 brew install kubectl
