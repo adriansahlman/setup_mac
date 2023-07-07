@@ -1,12 +1,14 @@
 #!/bin/zsh
-set -eux
-ARCH=arm64
-PYTHON_VERSION=3.8
-#curl -fsSL -v -o ~/anaconda.sh -O  "https://repo.anaconda.com/archive/Anaconda3-2022.10-MacOSX-${ARCH}.sh"
-#chmod +x ~/anaconda.sh
-#~/anaconda.sh
-#rm ~/anaconda.sh
-#source ~/.zshrc
-conda install -y python=${PYTHON_VERSION} cmake conda-build pyyaml numpy ipython
-conda install -y pytorch torchvision torchaudio -c pytorch
-pip install --upgrade pip
+brew install python
+
+pip install numpy
+pip install pandas
+pip install plotly
+
+// install pytables
+pip install cython
+brew install hdf5
+brew install c-blosc
+export HDF5_DIR=/opt/homebrew/opt/hdf5 
+export BLOSC_DIR=/opt/homebrew/opt/c-blosc
+pip install tables
