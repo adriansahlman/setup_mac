@@ -43,6 +43,7 @@ brew install bufbuild/buf/buf
 brew install graphviz
 brew install flamegraph
 brew install tree
+brew install gh
 
 # K8 stuff
 brew install kubectl
