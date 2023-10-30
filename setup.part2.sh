@@ -124,3 +124,7 @@ echo 'export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1' >> ~/.zshrc
 brew install python
 curl -sSL https://install.python-poetry.org | sed 's/symlinks=False/symlinks=True/' | python -
 echo 'export PATH="${HOME}/.local/bin:${PATH}"' >> ~/.zshrc
+mkdir -p ~/.zfunc
+poetry completions zsh > ~/.zfunc/_poetry
+echo 'fpath+=~/.zfunc' >> ~/.zshrc
+echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
