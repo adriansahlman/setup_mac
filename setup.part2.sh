@@ -119,3 +119,8 @@ git config --global core.editor vim
 
 echo 'export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1' >> ~/.zshrc
 echo 'export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1' >> ~/.zshrc
+
+# INSTALL PYTHON AND POETRY
+brew install python
+curl -sSL https://install.python-poetry.org | sed 's/symlinks=False/symlinks=True/' | python -
+echo 'export PATH="${HOME}/.local/bin:${PATH}"' >> ~/.zshrc
