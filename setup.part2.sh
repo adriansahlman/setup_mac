@@ -128,3 +128,4 @@ mkdir -p ~/.zfunc
 poetry completions zsh > ~/.zfunc/_poetry
 echo 'fpath+=~/.zfunc' >> ~/.zshrc
 echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
+echo 'export POETRY_VIRTUALENVS_IN_PROJECT=true' >> ~/.zshrc
