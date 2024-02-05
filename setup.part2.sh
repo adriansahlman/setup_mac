@@ -41,6 +41,7 @@ brew install flamegraph
 brew install tree
 brew install gh
 brew install podman
+brew install pipx
 
 # K8 stuff
 brew install kubectl
