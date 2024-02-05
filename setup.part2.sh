@@ -88,6 +88,7 @@ brew install --cask discord
 brew install --cask visual-studio-code
 brew install --cask microsoft-teams
 brew install --cask whatsapp
+brew install --cask aldente
 
 
 # CLOUD
