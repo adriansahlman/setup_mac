@@ -60,7 +60,7 @@ brew update
 # ADD GNU/LINUX UTILS
 
 temp_dir=$(mktemp -d)
-git clone https://github.com/fabiomaia/linuxify.git "${temp_dir}" && cd ${temp_dir} ./linuxify install; cd -
+git clone https://github.com/fabiomaia/linuxify.git "${temp_dir}" && cd ${temp_dir} && ./linuxify install; cd -
 rm -rf "${temp_dir}"
 echo '# gnu/linux util paths' >> ~/.zshrc
 echo "source ~/.linuxify\n" >> ~/.zshrc
