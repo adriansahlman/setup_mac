@@ -70,7 +70,8 @@ Battery
 Night Shift...
 * *Schedule* - Sunset to Sunrise <br>
 
-Advanced...
+#### Battery
+Options...
 * *Prevent automatic sleeping on power adapter when the display is off* - Enable <br>
 
 #### Notifications
