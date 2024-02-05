@@ -1,10 +1,6 @@
 #!/bin/zsh
 set -eux
 
-# Taken from
-# https://gist.github.com/tjluoma/22f26a7519162fd5aeb39bf4bf43780b
-ARCH=$(sysctl kern.version | awk -F'_' '/RELEASE/{print $2}')
-
 
 # Continue with linux tooling
 source ~/.linuxify
@@ -44,6 +40,7 @@ brew install graphviz
 brew install flamegraph
 brew install tree
 brew install gh
+brew install podman
 
 # K8 stuff
 brew install kubectl
@@ -87,13 +84,8 @@ echo 'alias tf=terraform' >> ~/.zshrc
 brew install --cask firefox
 brew install --cask spotify
 brew install --cask vlc
-brew install --cask slack
-brew install --cask clickup
 brew install --cask discord
 brew install --cask visual-studio-code
-brew install --cask docker
-brew install --cask steam
-brew install --cask deluge
 brew install --cask microsoft-teams
 brew install --cask whatsapp
 
@@ -133,5 +125,3 @@ poetry completions zsh > ~/.zfunc/_poetry
 echo 'fpath+=~/.zfunc' >> ~/.zshrc
 echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
 echo 'export POETRY_VIRTUALENVS_IN_PROJECT=true' >> ~/.zshrc
-
-
