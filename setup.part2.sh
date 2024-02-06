@@ -9,7 +9,7 @@ source ~/.linuxify
 
 # CONFIGURE VIM
 
-wget -o ~/.vimrc https://gist.githubusercontent.com/adriansahlman/1068fbc6b5b7fd80ea62bcc1b3de0275/raw/1a5e5a3cacbf95edcae89146db0e65a2a0b2f3af/.vimrc
+curl -fsSL https://gist.githubusercontent.com/adriansahlman/1068fbc6b5b7fd80ea62bcc1b3de0275/raw/1a5e5a3cacbf95edcae89146db0e65a2a0b2f3af/.vimrc -o ~/.vimrc
 
 
 
@@ -87,7 +87,6 @@ brew install --cask spotify
 brew install --cask vlc
 brew install --cask discord
 brew install --cask visual-studio-code
-brew install --cask microsoft-teams
 brew install --cask aldente
 
 
