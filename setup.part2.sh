@@ -117,7 +117,7 @@ echo 'export BLOSC_DIR=/opt/homebrew/opt/c-blosc' >> ~/.zshrc
 
 
 # INSTALL PYTHON AND POETRY
-brew install "python@3.10"
+brew install "python@3.11"
 curl -sSL https://install.python-poetry.org | sed 's/symlinks=False/symlinks=True/' | python -
 echo 'export PATH="${HOME}/.local/bin:${PATH}"' >> ~/.zshrc
 mkdir -p ~/.zfunc
