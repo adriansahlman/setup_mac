@@ -23,11 +23,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder;
 
 
-# FINDER SETTINGS
-
-defaults write com.apple.Finder AppleShowAllFiles true
-
-
 
 # ADD COMMAND-LINE TOOLS
 
