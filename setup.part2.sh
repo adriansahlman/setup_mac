@@ -88,6 +88,7 @@ brew install --cask vlc
 brew install --cask discord
 brew install --cask visual-studio-code
 brew install --cask aldente
+brew install --cask rectangle
 
 
 # CLOUD
