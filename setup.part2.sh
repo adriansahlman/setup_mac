@@ -79,6 +79,9 @@ brew install hashicorp/tap/terraform
 echo 'alias tf=terraform' >> ~/.zshrc
 terraform -install-autocomplete
 
+# helm
+brew install helm
+
 
 
 # ADD COMMON APPS
