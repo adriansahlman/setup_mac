@@ -94,6 +94,8 @@ brew install --cask visual-studio-code
 brew install --cask aldente
 brew install --cask rectangle
 
+# TAILSCALE
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # CLOUD
 
