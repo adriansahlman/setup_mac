@@ -35,7 +35,7 @@ echo "alias yaegi='rlwrap yaegi'" >> ~/.zshrc
 
 brew install jq
 brew install protobuf
-brew install bufbuild/buf/buf
+brew install gpg
 brew install graphviz
 brew install flamegraph
 brew install tree
@@ -95,7 +95,7 @@ brew install --cask aldente
 brew install --cask rectangle
 
 # TAILSCALE
-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+echo 'alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"' >> ~/.zshrc
 
 # CLOUD
 
