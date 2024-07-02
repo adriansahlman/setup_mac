@@ -102,12 +102,3 @@ echo 'alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"' >>
 # azure cli
 brew install azure-cli
 sudo az aks install-cli
-
-
-# CONFIGURE GIT
-
-git config --global init.defaultBranch main
-
-git config --global user.name "Adrian Sahlman"
-git config --global user.email "adrian.sahlman@gmail.com"
-git config --global core.editor vim
