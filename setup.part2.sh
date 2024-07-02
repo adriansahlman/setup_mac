@@ -102,3 +102,56 @@ echo 'alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"' >>
 # azure cli
 brew install azure-cli
 sudo az aks install-cli
+
+touch ~/.gitconfig
+
+cat > ~/.gitconfig <<- EOM
+[credential "https://github.com"]
+    helper = "/opt/homebrew/bin/gh auth git-credential"
+
+[includeIf "gitdir:~/src/github.com/sentianai/"]
+    path = "~/.gitconfig-work"
+
+[includeIf "gitdir:~/src/github.com/weirgroup/"]
+    path = "~/.gitconfig-work"
+
+[includeIf "gitdir:~/src/github.com/adriansahlman/"]
+    path = "~/.gitconfig-private"
+EOM
+
+touch ~/.gitconfig-work
+cat > ~/.gitconfig-work <<- EOM
+[user]
+	name = "Adrian Sahlman"
+	email = "adrian.sahlman@mail.weir"
+	signingkey = "~/.ssh/work.pub"
+[init]
+	defaultBranch = main
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[core]
+	sshCommand = "ssh -i ~/.ssh/work"
+	editor = vim
+[github]
+	user = "adriansahlmanw"
+[gpg]
+	format = "ssh"
+EOM
+
+touch ~/.gitconfig-private
+cat > ~/.gitconfig-private <<- EOM
+[user]
+	name = "Adrian Sahlman"
+	email = "adrian.sahlman@gmail.com"
+[init]
+	defaultBranch = main
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[core]
+	sshCommand = "ssh -i ~/.ssh/private"
+	editor = vim
+[github]
+	user = "adriansahlman"
+EOM
