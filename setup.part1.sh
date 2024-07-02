@@ -49,7 +49,7 @@ echo '# activate brew' >> ~/.zshrc
 echo "${brew_activate}\n" >> ~/.zshrc
 eval $(${BREW_PATH} shellenv)
 brew update
-
+echo 'export HOMEBREW_NO_AUTO_UPDATE=1' >> ~/.zshrc
 
 
 # ADD GNU/LINUX UTILS
